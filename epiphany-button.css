@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+epiphany-button {
+  background-color: #14a0de;
+  color: #FFF;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+epiphany-button:hover {
+  background-color: #72c6eb;
+}
+
+epiphany-button img {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+epiphany-button span {
+  vertical-align: middle;
+}
+
+epiphany-button small {
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+epiphany-popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+epiphany-popup.show {
+  display: block;
+}
+
+epiphany-popup popup-container {
+  display: block;
+  position: absolute;
+  z-index: 9999999;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  min-height: 300px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+epiphany-popup popup-container epiphany-header {
+	display: block;
+	background-color: #14a0de;
+	width: 100%;
+	padding: 10px 0px;
+    position: relative;
+    color: #fff;
+    vertical-align: middle;
+}
+epiphany-popup popup-container epiphany-header img {
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+epiphany-popup popup-container epiphany-close {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+epiphany-section {
+	padding: 20px;
+	display: block;
+}
+epiphany-amount,epiphany-description,epiphany-address {
+	display: block;
+}
